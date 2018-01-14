@@ -4,10 +4,7 @@ from django.core.files.uploadedfile import InMemoryUploadedFile
 from django.db import models
 from awesome_avatar import forms
 
-try:
-    from cStringIO import StringIO
-except ImportError:
-    from StringIO import StringIO
+from io import StringIO
 
 try:
     from PIL import Image
